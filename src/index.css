@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.25;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+
+  margin: 0;
+
+  color: #121417;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.containerHeader {
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.containerSection {
+  padding-left: 64px;
+  padding-right: 64px;
+}

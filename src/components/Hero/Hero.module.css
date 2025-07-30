@@ -1,0 +1,96 @@
+.hero {
+  background-color: #fff;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.content {
+  background: #f8f8f8;
+  border-radius: 30px;
+  width: 720px;
+  height: 530px;
+  padding: 98px 40px 0 64px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #121417;
+  margin: 0 0 32px 0;
+  width: 548px;
+}
+
+.badge {
+  background-color: #cbded3;
+  border-radius: 8px;
+  width: 195px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: italic;
+  font-weight: 400;
+  color: #121417;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: -0.02em;
+  color: #121417;
+  margin: 0;
+  width: 471px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  margin-top: 65px;
+  background-color: #89a89c;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #121417;
+  text-align: center;
+  border-radius: 12px;
+  padding: 16px 88px;
+  width: 267px;
+  height: 60px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.ctaBtn:hover,
+.ctaBtn:focus {
+  background-color: #9fbaae;
+}
+
+.imageWrapper {
+  background: #cbded3;
+  border-radius: 30px;
+  width: 568px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 30px;
+}

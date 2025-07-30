@@ -1,0 +1,93 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  height: 88px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 1184px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoText {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #121417;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.navLink {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #121417;
+  transition: color 0.3s;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #9fbaae;
+}
+
+.active {
+  color: #9fbaae;
+}
+
+.auth {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #121417;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color 0.3s;
+}
+
+.loginIcon {
+  fill: #9fbaae;
+}
+
+.login:hover,
+.login:focus {
+  color: #8a33fd;
+}
+
+.register {
+  width: 166px;
+  height: 48px;
+  padding: 14px 39px;
+  background-color: #121417;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+}
+
+.register:hover,
+.register:focus {
+  background-color: #7328d3;
+}
