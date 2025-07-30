@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import css from "./Header.module.css";
-import loginIcon from "../../assets/log-in-01.svg"; // шляху підлаштуй, якщо треба
+import loginIcon from "../../assets/log-in-01.svg";
+import Ukraine from "../../assets/ukraine.svg";
 
 const Header = () => {
   return (
@@ -9,14 +10,13 @@ const Header = () => {
       <div className={`container containerHeader`}>
         <div className={css.inner}>
           <div className={css.logo}>
-            <svg
+            <img
+              src={Ukraine}
+              alt="Ukraine"
               className={css.logoIcon}
               width="28"
               height="28"
-              fill="currentColor"
-            >
-              <use href="/icons.svg#ukraine" />
-            </svg>
+            />
             <p className={css.logoText}>LearnLingo</p>
           </div>
 

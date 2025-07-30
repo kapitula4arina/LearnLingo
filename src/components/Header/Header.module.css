@@ -71,7 +71,7 @@
 
 .login:hover,
 .login:focus {
-  color: #8a33fd;
+  color: #9fbaae;
 }
 
 .register {
@@ -89,5 +89,5 @@
 
 .register:hover,
 .register:focus {
-  background-color: #7328d3;
+  background-color: #9fbaae;
 }
