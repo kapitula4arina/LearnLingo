@@ -37,6 +37,7 @@
   line-height: 1.25;
   color: #121417;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .navLink:hover,
@@ -54,10 +55,18 @@
   align-items: center;
 }
 
-.login {
+.buttonReset {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.login {
   color: #121417;
   font-weight: 700;
   font-size: 16px;
@@ -66,7 +75,9 @@
 }
 
 .loginIcon {
-  fill: #9fbaae;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .login:hover,
@@ -85,9 +96,42 @@
   line-height: 1.25;
   border-radius: 12px;
   transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .register:hover,
 .register:focus {
+  background-color: #9fbaae;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #121417;
+}
+
+.logout {
+  padding: 14px 39px;
+  background-color: #121417;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-left: 12px;
+  border: none;
+  outline: none;
+}
+
+.logout:hover,
+.logout:focus {
   background-color: #9fbaae;
 }
