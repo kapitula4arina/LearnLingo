@@ -9,10 +9,16 @@ export const useAuth = () => {
   const logout = useCallback(() => signOut(auth), []);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (u) => {
-      setUser(u);
+    const unsubscribe = onAuthStateChanged(auth, async (u) => {
+      if (u) {
+        await u.reload();
+        setUser(auth.currentUser);
+      } else {
+        setUser(null);
+      }
       setLoading(false);
     });
+
     return unsubscribe;
   }, []);
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { registerSchema } from "../../hooks/authValidation";
 import { auth } from "../../services/api";
@@ -35,7 +35,16 @@ const RegisterModal = ({ onClose, onSuccess }) => {
 
   const onSubmit = async (data) => {
     try {
-      await createUserWithEmailAndPassword(auth, data.email, data.password);
+      const { user } = await createUserWithEmailAndPassword(
+        auth,
+        data.email,
+        data.password
+      );
+
+      await updateProfile(user, {
+        displayName: data.name,
+      });
+
       if (onSuccess) onSuccess();
       onClose();
     } catch (err) {
@@ -60,7 +69,7 @@ const RegisterModal = ({ onClose, onSuccess }) => {
         <p className={css.subtitle}>
           Thank you for your interest in our platform! In order to register, we
           need some information. Please provide us with the following
-          information.
+          information
         </p>
 
         <form className={css.form} onSubmit={handleSubmit(onSubmit)} noValidate>

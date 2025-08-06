@@ -55,7 +55,7 @@ const LoginModal = ({ onClose, onSuccess }) => {
           <img src={CloseIcon} alt="Close" width={32} height={32} />
         </button>
 
-        <h2 className={css.title}>Log in</h2>
+        <h2 className={css.title}>Log In</h2>
         <p className={css.subtitle}>
           Welcome back! Please enter your credentials to access your account.
         </p>
